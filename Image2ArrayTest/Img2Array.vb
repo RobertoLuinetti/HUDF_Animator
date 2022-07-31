@@ -512,19 +512,19 @@ Module Img2Array
                         Dim Abrush As Brush = Brushes.LightGreen
                         Dim p As New System.Drawing.Pen(Brushes.White, Magnify)
                         gr.DrawString("ID " & CStr(F), Afnt, Abrush, 25, 25 * Magnify)
-                        gr.DrawString("Item " & AstroData(F, Item), Afnt, Abrush, 25, 50 * Magnify)
-                        gr.DrawString("Area " & AstroData(F, Area) & "pixel - Center " & AstroData(F, X_AVG) & "/" & AstroData(F, Y_AVG), Afnt, Abrush, 25, 75 * Magnify)
-                        gr.DrawString("(R/B)/(R+B) " & AstroData(F, RANK), Afnt, Abrush, 25, 100 * Magnify)
+                        gr.DrawString("Area " & AstroData(F, Area) & " pixel - Position " & AstroData(F, X_AVG) & " ÷ " & AstroData(F, Y_AVG), Afnt, Abrush, 25, 50 * Magnify)
+                        'gr.DrawString("Item " & AstroData(F, Item), Afnt, Abrush, 25, 50 * Magnify)
+                        'gr.DrawString("(R/B)/(R+B) " & AstroData(F, RANK), Afnt, Abrush, 25, 100 * Magnify)
                         'gr.DrawString("Distance " & AstroData(F, RANK_N), Afnt, Abrush, 25, 125 * Magnify)
 
                         Dim RBrush As New SolidBrush(Color.FromArgb(AstroData(F, R_AVG), AstroData(F, G_AVG), AstroData(F, B_AVG)))
-                        Dim rect As New Rectangle(30 * Magnify, 155 * Magnify, 30 * Magnify, 30 * Magnify)
+                        Dim rect As New Rectangle(28 * Magnify, 85 * Magnify, 30 * Magnify, 30 * Magnify)
                         gr.FillRectangle(RBrush, rect)
 
                         Dim rectz As New Rectangle()
 
                         Dim RBrushM As New SolidBrush(Color.FromArgb(AstroData(F, MAX_R), AstroData(F, MAX_G), AstroData(F, MAX_B)))
-                        Dim rectM As New Rectangle(70 * Magnify, 155 * Magnify, 30 * Magnify, 30 * Magnify)
+                        Dim rectM As New Rectangle(68 * Magnify, 85 * Magnify, 30 * Magnify, 30 * Magnify)
                         gr.FillRectangle(RBrushM, rectM)
 
                     End Using

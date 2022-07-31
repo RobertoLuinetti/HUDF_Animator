@@ -16,9 +16,11 @@
         Var2 = CDbl(TB_VAR2.Value) / 100
 
         'Dim Source As String = "C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\Easy_X.bmp"
+
         Dim Source As String = "C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\CampioneHUDF.bmp"
         'Dim Source As String = "C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\HUDS_POST_2000.bmp"
-        ''Dim Source As String = "C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\HUDS_POST.bmp"
+        'Dim Source As String = "C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\HUDS_POST.bmp"
+        'Dim Source As String = "C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\HUDS_POST_1800_full.bmp"
         PB1.Image = Image.FromFile(Source)
         DoGraphics(Source)
         'PB2.Image = Image.FromFile("C:\Users\rober\OneDrive\Documenti\HubbleUltraDeepSpace\OUTPUT.TIF")

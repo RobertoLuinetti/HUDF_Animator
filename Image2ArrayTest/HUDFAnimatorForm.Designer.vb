@@ -246,7 +246,7 @@ Partial Class HUDFAnimatorForm
         Me.TB_StartGap.Size = New System.Drawing.Size(204, 56)
         Me.TB_StartGap.TabIndex = 16
         Me.TB_StartGap.TickFrequency = 5
-        Me.TB_StartGap.Value = 5
+        Me.TB_StartGap.Value = 50
         '
         'TB_VAR1
         '
@@ -267,7 +267,7 @@ Partial Class HUDFAnimatorForm
         Me.TB_VAR2.Size = New System.Drawing.Size(204, 56)
         Me.TB_VAR2.TabIndex = 18
         Me.TB_VAR2.TickFrequency = 5
-        Me.TB_VAR2.Value = 100
+        Me.TB_VAR2.Value = 450
         '
         'Label3
         '
@@ -283,9 +283,9 @@ Partial Class HUDFAnimatorForm
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(34, 668)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 20)
+        Me.Label4.Size = New System.Drawing.Size(96, 20)
         Me.Label4.TabIndex = 20
-        Me.Label4.Text = "VAR1"
+        Me.Label4.Text = "Accelleration"
         '
         'Label5
         '
